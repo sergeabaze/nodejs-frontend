@@ -5,8 +5,10 @@ name: Build and deploy Node.js app to Azure Web App - frontend5878
 
 on:
   push:
-    branches:
-      - main
+    #branches:
+     branches-ignore:  
+       - 'releases/**-alpha'
+     # - main
   workflow_dispatch:
 
 env:

@@ -5,8 +5,10 @@ name: Build and deploy Node.js app to Azure Web App - jordan-openai-completions-
 
 on:
   push:
-    branches:
-      - main
+    branches-ignore:  
+     - 'releases/**-alpha'
+    #branches:
+     # - main
   workflow_dispatch:
 
 jobs:
